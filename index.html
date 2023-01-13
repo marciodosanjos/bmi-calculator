@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
 
+</head>
+
+<body>
     <div class="content">
         <div class="intro">
             <h2>BMI Calculator</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-            Eum soluta nisi consequatur molestias laboriosam tempore unde numquam est voluptas.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Eum soluta nisi consequatur molestias laboriosam tempore unde numquam est voluptas.</p>
         </div>
 
         <div class="calculator">
-            <form action="" method="get">
+            <form action="" method="get" id="form">
 
-                <div id="idade">
-                    <label for="idade">Idade</label>
-                    <input type="text" />
+                <div>
+                    <label for="age">Idade</label>
+                    <input type="text" id="age" name="age" />
                 </div>
-                <div id="altura">
-                    <label for="altura">Altura</label>
-                    <input type="text" />
+                <div>
+                    <label for="height">Height</label>
+                    <input type="text" id="height" name="height" />
                 </div>
                 <div id="peso">
-                    <label for="altura">Peso</label>
-                    <input type="text" />
+                    <label for="weight">Weight</label>
+                    <input type="text" id="weight" name="weight" />
                 </div>
                 <div id="button">
-                    <button type="submit">Calcular</button>
+                    <button id="button" type="submit">Calcular</button>
                 </div>
             </form>
         </div>
 
-        <div id="resultado">
-            
-        </div>
+        <div id="result"></div>
     </div>
 
-</head>
-<body>
-    
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>
