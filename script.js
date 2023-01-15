@@ -16,7 +16,7 @@ submit.onsubmit = function (e) {
 
         if (campo === "") {
             let h2 = document.createElement("h2");
-            h2.innerHTML = `Type your ${campo}`;
+            h2.innerHTML = `Type your $`;
             document.getElementById("result").appendChild(h2);
         }
     }
