@@ -13,9 +13,9 @@
 <body>
     <div class="content">
         <div class="intro">
-            <h2>BMI Calculator</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Eude numquam est voluptas.</p>
+            <h2 id="intro-title">BMI Calculator</h2>
+            <p id="intro-description">This is your body mass index (BMI) calculator. Enter the information below to find
+                your current index.</p>
         </div>
 
         <div class="calculator">
@@ -23,23 +23,30 @@
 
                 <div>
                     <label for="age"></label>
-                    <input type="text" id="age" name="age" placeholder="Your age" />
+                    <input type="text" id="age" name="age" placeholder="Your age (ex. 30)" />
                 </div>
                 <div>
                     <label for="height"></label>
-                    <input type="text" id="height" name="height" placeholder="Your height" />
+                    <input type="text" id="height" name="height" placeholder="Your height (ex. 185)" />
                 </div>
                 <div id="peso">
                     <label for="weight"></label>
-                    <input type="text" id="weight" name="weight" placeholder="Your weight" />
+                    <input type="text" id="weight" name="weight" placeholder="Your weight (ex. 50)" />
                 </div>
-                <div id="button">
-                    <button id="button" type="submit">Calcular</button>
+                <div id="buttons">
+                    <div class="btn">
+                        <button id="button" type="submit">Calculate</button>
+                    </div>
+                    <div class="btn">
+                        <button id="btn-clean" type="reset">Clean</button>
+                    </div>
                 </div>
+
             </form>
         </div>
+        <div id="result"></div>
     </div>
-    <div id="result"></div>
+
     <script type="text/javascript" src="script.js"></script>
 </body>
 
